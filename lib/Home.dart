@@ -65,7 +65,7 @@ class _HomeState extends State<Home> {
                               child: Column(crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                 Text('₹ '+c[index]['amount'].toString(),style: TextStyle(fontSize: size.height*0.05,fontWeight: FontWeight.bold)),
-                                 Text('Transaction Id'+c[index]['amount'].toString()),
+                                 Text('Transaction Id: '+c[index]['amount'].toString()),
                                 
                               ],),
                             ),
@@ -82,14 +82,21 @@ class _HomeState extends State<Home> {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: [
-                            Container(
-                            margin: const EdgeInsets.all(15.0),
+                               Container(
+                              margin: const EdgeInsets.all(15.0),
   padding: const EdgeInsets.all(3.0),
   decoration: BoxDecoration(
     border: Border.all(color: Colors.blueAccent)
   ),
-                             height: size.height*0.2,
+                              height: size.height*0.2,
                               width: size.width*0.3,
+
+                              child: Column(crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                Text('₹ '+c[index]['amount'].toString(),style: TextStyle(fontSize: size.height*0.05,fontWeight: FontWeight.bold)),
+                                 Text('Transaction Id: '+c[index]['amount'].toString()),
+                                
+                              ],),
                             ),
                           ],
                         ),
