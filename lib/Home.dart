@@ -75,7 +75,7 @@ class _HomeState extends State<Home> {
                                           fontSize: size.height * 0.05,
                                           fontWeight: FontWeight.bold)),
                                   Text('Transaction Id: ' +
-                                      c[index]['amount'].toString()),
+                                      c[index]['id'].toString()),
 
 
                                 ],
@@ -118,7 +118,7 @@ class _HomeState extends State<Home> {
                                           fontSize: size.height * 0.05,
                                           fontWeight: FontWeight.bold)),
                                   Text('Transaction Id: ' +
-                                      c[index]['amount'].toString()),
+                                      c[index]['id'].toString()),
                                 ],
                               ),
                             ),
