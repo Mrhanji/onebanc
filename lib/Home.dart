@@ -60,6 +60,10 @@ class _HomeState extends State<Home> {
   ),
                               height: size.height*0.2,
                               width: size.width*0.3,
+
+                              child: Column(children: [
+                                Text(c[index]['amount'].toString())
+                              ],),
                             ),
                           ],
                         ),
