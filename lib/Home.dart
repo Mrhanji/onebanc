@@ -53,8 +53,12 @@ class _HomeState extends State<Home> {
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             Container(
-                              color: Colors.green,
-                              height: size.height*0.1,
+                              margin: const EdgeInsets.all(15.0),
+  padding: const EdgeInsets.all(3.0),
+  decoration: BoxDecoration(
+    border: Border.all(color: Colors.blueAccent)
+  ),
+                              height: size.height*0.2,
                               width: size.width*0.3,
                             ),
                           ],
@@ -71,8 +75,12 @@ class _HomeState extends State<Home> {
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: [
                             Container(
-                              color: Colors.red,
-                             height: size.height*0.1,
+                            margin: const EdgeInsets.all(15.0),
+  padding: const EdgeInsets.all(3.0),
+  decoration: BoxDecoration(
+    border: Border.all(color: Colors.blueAccent)
+  ),
+                             height: size.height*0.2,
                               width: size.width*0.3,
                             ),
                           ],
