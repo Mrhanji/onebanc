@@ -47,7 +47,7 @@ class _HomeState extends State<Home> {
                 itemCount: c.length,
                 itemBuilder: (context, index) {
                   var dir = false;
-                  if (c[index]['direction'] == 1) {
+                  if (c[index]['direction'] == 2) {
                     return Column(
                       children: [
                         Row(
@@ -63,7 +63,7 @@ class _HomeState extends State<Home> {
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  c[index]['type']=='1'?Row( mainAxisAlignment: MainAxisAlignment.end,
+                                  c[index]['type']==1?Row( mainAxisAlignment: MainAxisAlignment.end,
                                     children: [
                                     Icon(Icons.upgrade_rounded),Text('You Paid'),
                                   ],):Row( mainAxisAlignment: MainAxisAlignment.end,
@@ -106,6 +106,13 @@ class _HomeState extends State<Home> {
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
+                                  c[index]['type']==1?Row( mainAxisAlignment: MainAxisAlignment.end,
+                                    children: [
+                                    Icon(Icons.upgrade_rounded),Text('You Paid'),
+                                  ],):Row( mainAxisAlignment: MainAxisAlignment.end,
+                                    children: [
+                                    Icon(Icons.file_download),Text('You Collected'+c[index]['type'].toString()),
+                                  ],),
                                   Text('₹ ' + c[index]['amount'].toString(),
                                       style: TextStyle(
                                           fontSize: size.height * 0.05,
