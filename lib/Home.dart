@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
@@ -61,8 +62,11 @@ class _HomeState extends State<Home> {
                               height: size.height*0.2,
                               width: size.width*0.3,
 
-                              child: Column(children: [
-                                Text(c[index]['amount'].toString())
+                              child: Column(crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                Text('₹ '+c[index]['amount'].toString(),style: TextStyle(fontSize: size.height*0.05,fontWeight: FontWeight.bold)),
+                                 Text('Transaction Id'+c[index]['amount'].toString()),
+                                
                               ],),
                             ),
                           ],
