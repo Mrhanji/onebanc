@@ -111,7 +111,7 @@ class _HomeState extends State<Home> {
                                     Icon(Icons.upgrade_rounded),Text('You Paid'),
                                   ],):Row( mainAxisAlignment: MainAxisAlignment.end,
                                     children: [
-                                    Icon(Icons.file_download),Text('You Collected'+c[index]['type'].toString()),
+                                    Icon(Icons.file_download),Text('You Collected'),
                                   ],),
                                   Text('₹ ' + c[index]['amount'].toString(),
                                       style: TextStyle(
