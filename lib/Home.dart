@@ -40,7 +40,7 @@ class _HomeState extends State<Home> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Onebanc Invoceing'),
+          title: Text('Onebanc Invoceingv2'),
 
         ),
         body: c != null
