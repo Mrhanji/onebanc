@@ -40,7 +40,8 @@ class _HomeState extends State<Home> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Onebanc T'),
+          title: Text('Onebanc Invoceing'),
+
         ),
         body: c != null
             ? ListView.builder(
